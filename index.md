@@ -3,7 +3,7 @@
 <br>
 
 <div class="card-group">
-  <a href="https://civilization-os.github.io/" class="card">
+  <a href="https://civilization-os.github.io/" class="card" target="_self" rel="external">
     <div class="card-icon">🏠</div>
     <div class="card-title"><strong>个人页</strong></div>
     <div class="card-desc">返回个人主页</div>
