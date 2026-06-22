@@ -7,17 +7,39 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: 'CS Wiki', link: '/cs/' },
       { text: 'Projects', link: '/projects/' },
     ],
     sidebar: {
-      '/guide/': [
+      '/cs/': [
         {
-          text: 'Guide',
+          text: '基础',
+          collapsed: false,
           items: [
-            { text: 'Introduction', link: '/guide/' },
-            { text: 'Getting Started', link: '/guide/getting-started' },
+            { text: '算法与数据结构', link: '/cs/basics/algorithms/' },
+            { text: '操作系统', link: '/cs/basics/os/' },
+            { text: '计算机网络', link: '/cs/basics/network/' },
           ],
+        },
+        {
+          text: '编程语言',
+          collapsed: true,
+          items: [],
+        },
+        {
+          text: '框架',
+          collapsed: true,
+          items: [],
+        },
+        {
+          text: '中间件',
+          collapsed: true,
+          items: [],
+        },
+        {
+          text: '分布式理论',
+          collapsed: true,
+          items: [],
         },
       ],
       '/projects/': [
