@@ -3,14 +3,25 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/docs/',
   title: 'civilization-os',
-  description: 'Server operations runtime for AI agents',
+  description: 'Wiki · Math · CS',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'CS Wiki', link: '/cs/' },
+      { text: 'Math', link: '/math/calculus/' },
+      { text: 'CS', link: '/cs/' },
       { text: 'Projects', link: '/projects/' },
     ],
     sidebar: {
+      '/math/': [
+        {
+          text: '数学',
+          items: [
+            { text: '高等数学', link: '/math/calculus/' },
+            { text: '线性代数', link: '/math/linear-algebra/' },
+            { text: '概率论', link: '/math/probability/' },
+          ],
+        },
+      ],
       '/cs/': [
         {
           text: '基础',
