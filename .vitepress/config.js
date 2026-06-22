@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { createRequire } from 'module'
 
 export default defineConfig({
   base: '/docs/',
