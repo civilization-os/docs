@@ -3,6 +3,11 @@
 <br>
 
 <div class="card-group">
+  <a href="https://civilization-os.github.io/" class="card">
+    <div class="card-icon">🏠</div>
+    <div class="card-title"><strong>个人页</strong></div>
+    <div class="card-desc">返回个人主页</div>
+  </a>
   <a href="/docs/math/calculus/" class="card">
     <div class="card-icon">📐</div>
     <div class="card-title"><strong>Math</strong></div>
@@ -14,3 +19,4 @@
     <div class="card-desc">算法 · 网络 → 分布式</div>
   </a>
 </div>
+
