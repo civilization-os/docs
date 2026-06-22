@@ -1,0 +1,14 @@
+{
+  "name": "civilization-os-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "14724": "file:C:/Users/14724",
+    "vitepress": "^1.6.4"
+  }
+}
