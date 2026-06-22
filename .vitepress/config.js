@@ -12,7 +12,10 @@ const inlineCSS = `
 @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-.hero-svg .cursor { animation: blink 0.8s step-end infinite; }
+@keyframes showCursor { from { opacity: 0; } to { opacity: 1; } }
+.hero-svg .cursor { opacity: 0; animation: blink 0.8s step-end infinite; }
+.hero-svg .cursor-title { animation: showCursor 0.01s 1.12s both, blink 0.8s step-end infinite; }
+.hero-svg .cursor-sub { animation: showCursor 0.01s 1.26s both, blink 0.8s step-end infinite; }
 .hero-svg .fade { opacity: 0; animation: fadeIn 0.35s both; }
 .hero-svg .float { animation: float 3s ease-in-out infinite; }
 .hero-svg .hero-text { fill: var(--vp-c-text-1); }

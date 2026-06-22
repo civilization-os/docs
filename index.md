@@ -6,7 +6,7 @@
       <tspan class="fade d7">z</tspan><tspan class="fade d8">a</tspan><tspan class="fade d9">t</tspan>
       <tspan class="fade d10">i</tspan><tspan class="fade d11">o</tspan><tspan class="fade d12">n</tspan>
       <tspan class="fade d13">-</tspan><tspan class="fade d14">o</tspan><tspan class="fade d15">s</tspan>
-      <tspan class="cursor">|</tspan>
+      <tspan class="cursor-title">|</tspan>
     </text>
     <text x="30" y="95" font-family="monospace" font-size="15" class="hero-sub">
       <tspan class="fade d1">W</tspan><tspan class="fade d2">r</tspan><tspan class="fade d3">i</tspan>
@@ -23,7 +23,7 @@
       <tspan class="fade d17"> </tspan><tspan class="fade d17">s</tspan><tspan class="fade d17">e</tspan>
       <tspan class="fade d17">r</tspan><tspan class="fade d17">v</tspan><tspan class="fade d17">e</tspan>
       <tspan class="fade d17">r</tspan><tspan class="fade d17">s</tspan><tspan class="fade d17">.</tspan>
-      <tspan class="cursor">|</tspan>
+      <tspan class="cursor-sub">|</tspan>
     </text>
     <text x="30" y="135" font-family="monospace" font-size="13" class="hero-meta">
       <tspan class="float">⚡</tspan>
