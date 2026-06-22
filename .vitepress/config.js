@@ -7,10 +7,34 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'ssh-mcp', link: '/docs/ssh-mcp' },
+      { text: 'Guide', link: '/guide/' },
+      { text: 'Projects', link: '/projects/' },
     ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Introduction', link: '/guide/' },
+            { text: 'Getting Started', link: '/guide/getting-started' },
+          ],
+        },
+      ],
+      '/projects/': [
+        {
+          text: 'Projects',
+          items: [
+            { text: 'Overview', link: '/projects/' },
+            { text: 'ssh-mcp', link: '/projects/ssh-mcp' },
+          ],
+        },
+      ],
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/civilization-os' },
     ],
+    footer: {
+      message: 'Built with ❤️',
+    },
   },
 })
