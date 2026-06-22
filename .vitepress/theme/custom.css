@@ -1,3 +1,13 @@
+/* Custom Global Cursor (Quill Pen) */
+html, body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M0,0 C3,6 8,11 20,16 C17,13 12,8 7,3 L0,0 Z" fill="url(%23quillGrad)"/><path d="M0,0 L2,6 L6,2 L0,0 Z" fill="%23ffffff" stroke="%236366f1" stroke-width="1.5"/><path d="M0,0 L16,16" stroke="%236366f1" stroke-width="1.5"/><defs><linearGradient id="quillGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%236366f1"/><stop offset="100%" stop-color="%23a855f7"/></linearGradient></defs></svg>') 0 0, auto;
+}
+
+/* Hoverable elements custom cursor (Fountain Pen / Pointing Stylus) */
+a, button, [role="button"], .card, .terminal-window, .vp-button, .nav-bar, .vp-sidebar-link, .social-links a {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M0,0 C3,6 8,11 20,16 C17,13 12,8 7,3 L0,0 Z" fill="url(%23quillGradHover)"/><path d="M0,0 L2,6 L6,2 L0,0 Z" fill="%23ffffff" stroke="%23a855f7" stroke-width="1.5"/><path d="M0,0 L16,16" stroke="%23a855f7" stroke-width="1.5"/><defs><linearGradient id="quillGradHover" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23a855f7"/><stop offset="100%" stop-color="%23ec4899"/></linearGradient></defs></svg>') 0 0, pointer !important;
+}
+
 /* Home page */
 .card-group {
   display: flex;
@@ -68,3 +78,14 @@
 .hero-svg .d10 { animation-delay: 0.63s; } .hero-svg .d11 { animation-delay: 0.70s; } .hero-svg .d12 { animation-delay: 0.77s; }
 .hero-svg .d13 { animation-delay: 0.84s; } .hero-svg .d14 { animation-delay: 0.91s; } .hero-svg .d15 { animation-delay: 0.98s; }
 .hero-svg .d16 { animation-delay: 1.05s; } .hero-svg .d17 { animation-delay: 1.12s; }
+
+/* SVG Mindmap Styles */
+.mindmap-node { transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.mindmap-node:hover { transform: scale(1.04); filter: drop-shadow(0 6px 16px rgba(99, 102, 241, 0.35)); }
+.mindmap-link { fill: none; stroke: var(--vp-c-brand-1); stroke-width: 2; opacity: 0.4; stroke-dasharray: 4 4; animation: dash 45s linear infinite; }
+.link-secondary { stroke: var(--vp-c-text-3); stroke-width: 1.5; opacity: 0.3; }
+@keyframes dash { to { stroke-dashoffset: -1000; } }
+.text-title { font-family: var(--vp-font-family-base, system-ui); font-weight: bold; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
+.text-branch { font-family: var(--vp-font-family-base, system-ui); font-weight: 600; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
+.text-sub { font-family: var(--vp-font-family-base, system-ui); font-size: 12px; fill: var(--vp-c-text-1); text-anchor: middle; dominant-baseline: middle; }
+

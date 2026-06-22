@@ -47,7 +47,14 @@ export default defineConfig({
   head: [
     ['style', {}, inlineCSS]
   ],
+  markdown: {
+    math: true
+  },
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/civilization-os/docs/edit/main/:path',
+      text: '在 GitHub 上编辑此页'
+    },
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Math', link: '/math/calculus/' },
@@ -70,7 +77,14 @@ export default defineConfig({
           text: '基础',
           collapsed: false,
           items: [
-            { text: '算法与数据结构', link: '/cs/basics/algorithms/' },
+            {
+              text: '算法与数据结构',
+              collapsed: false,
+              items: [
+                { text: '前言', link: '/cs/basics/algorithms/' },
+                { text: '第一章：排序算法', link: '/cs/basics/algorithms/sorting' },
+              ]
+            },
             { text: '操作系统', link: '/cs/basics/os/' },
             { text: '计算机网络', link: '/cs/basics/network/' },
           ],
@@ -78,22 +92,35 @@ export default defineConfig({
         {
           text: '编程语言',
           collapsed: true,
-          items: [],
+          items: [
+            { text: 'C++', link: '/cs/languages/cpp' },
+            { text: 'Java', link: '/cs/languages/java' },
+            { text: 'Python', link: '/cs/languages/python' },
+            { text: 'Go', link: '/cs/languages/go' },
+          ],
         },
         {
           text: '框架',
           collapsed: true,
-          items: [],
+          items: [
+            { text: 'Spring', link: '/cs/frameworks/spring' },
+          ],
         },
         {
           text: '中间件',
           collapsed: true,
-          items: [],
+          items: [
+            { text: '数据库', link: '/cs/middleware/database' },
+            { text: 'Kafka', link: '/cs/middleware/kafka' },
+            { text: 'Flink', link: '/cs/middleware/flink' },
+          ],
         },
         {
           text: '分布式理论',
           collapsed: true,
-          items: [],
+          items: [
+            { text: '前言', link: '/cs/distributed/' },
+          ],
         },
       ],
       '/projects/': [
