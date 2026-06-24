@@ -89,3 +89,16 @@ a, button, [role="button"], .card, .terminal-window, .vp-button, .nav-bar, .vp-s
 .text-branch { font-family: var(--vp-font-family-base, system-ui); font-weight: 600; fill: #fff; text-anchor: middle; dominant-baseline: middle; }
 .text-sub { font-family: var(--vp-font-family-base, system-ui); font-size: 12px; fill: var(--vp-c-text-1); text-anchor: middle; dominant-baseline: middle; }
 
+/* 目录大纲三级标题折叠逻辑 (仅折叠 H4 标题，即 2.x.x) */
+.VPDocOutlineItem.nested .VPDocOutlineItem.nested {
+  display: none;
+}
+
+/* 当父级标题 H3 (如 2.x) 激活，或子级标题 H4 (如 2.x.x) 自身激活时，展开子级列表 */
+.VPDocOutlineItem.nested li:has(> a.outline-link.active) > .VPDocOutlineItem.nested,
+.VPDocOutlineItem.nested li > .VPDocOutlineItem.nested:has(a.outline-link.active) {
+  display: block;
+}
+
+
+

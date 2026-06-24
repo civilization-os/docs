@@ -51,6 +51,11 @@ export default defineConfig({
     math: true
   },
   themeConfig: {
+    outline: {
+      level: [2, 4],
+      label: 'On this page',
+      collapse: true
+    },
     editLink: {
       pattern: 'https://github.com/civilization-os/docs/edit/main/:path',
       text: '在 GitHub 上编辑此页'
@@ -110,7 +115,16 @@ export default defineConfig({
           text: '中间件',
           collapsed: true,
           items: [
-            { text: '数据库', link: '/cs/middleware/database' },
+            {
+              text: '数据库',
+              collapsed: false,
+              items: [
+                { text: '前言', link: '/cs/middleware/database/' },
+                { text: 'MySQL', link: '/cs/middleware/database/mysql' },
+                { text: 'Redis', link: '/cs/middleware/database/redis' },
+                { text: '分布式存储', link: '/cs/middleware/database/distributed' },
+              ]
+            },
             { text: 'Kafka', link: '/cs/middleware/kafka' },
             { text: 'Flink', link: '/cs/middleware/flink' },
           ],
